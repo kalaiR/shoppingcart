@@ -1,0 +1,517 @@
+{% extends request.is_ajax|yesno:"shop-item.html,base.html" %}
+{% load i18n %}
+{% block content %}
+<!-- <section id="slider" class="slider-parallax revslider-wrap ohidden clearfix">
+
+           
+            
+            <div class="tp-banner-container">
+                <div class="tp-banner" >                    
+            
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+                jQuery(document).ready(function() {
+
+                    jQuery('.tp-banner').show().revolution(
+                    {
+                        dottedOverlay:"none",
+                        delay:16000,
+                        startwidth:1140,
+                        startheight:500,
+                        hideThumbs:200,
+
+                        thumbWidth:100,
+                        thumbHeight:50,
+                        thumbAmount:5,
+
+                        navigationType:"none",
+                        navigationArrows:"solo",
+                        navigationStyle:"preview2",
+
+                        touchenabled:"on",
+                        onHoverStop:"on",
+
+                        swipe_velocity: 0.7,
+                        swipe_min_touches: 1,
+                        swipe_max_touches: 1,
+                        drag_block_vertical: false,
+
+                        parallax:"mouse",
+                        parallaxBgFreeze:"on",
+                        parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+
+                        keyboardNavigation:"off",
+
+                        navigationHAlign:"center",
+                        navigationVAlign:"bottom",
+                        navigationHOffset:0,
+                        navigationVOffset:20,
+
+                        soloArrowLeftHalign:"left",
+                        soloArrowLeftValign:"center",
+                        soloArrowLeftHOffset:20,
+                        soloArrowLeftVOffset:0,
+
+                        soloArrowRightHalign:"right",
+                        soloArrowRightValign:"center",
+                        soloArrowRightHOffset:20,
+                        soloArrowRightVOffset:0,
+
+                        shadow:0,
+                        fullWidth:"on",
+                        fullScreen:"off",
+
+                        spinner:"spinner4",
+
+                        stopLoop:"off",
+                        stopAfterLoops:-1,
+                        stopAtSlide:-1,
+
+                        shuffle:"off",
+
+                        autoHeight:"off",
+                        forceFullWidth:"off",
+
+
+
+                        hideThumbsOnMobile:"off",
+                        hideNavDelayOnMobile:1500,
+                        hideBulletsOnMobile:"off",
+                        hideArrowsOnMobile:"off",
+                        hideThumbsUnderResolution:0,
+
+                        hideSliderAtLimit:0,
+                        hideCaptionAtLimit:0,
+                        hideAllCaptionAtLilmit:0,
+                        startWithSlide:0,
+                        fullScreenOffsetContainer: ".header"
+                    });
+
+
+
+
+                }); //ready
+
+            </script>
+
+          
+
+        </section>
+
+ -->        <!-- Content
+        ============================================= -->
+       <!--  <div class="section_mallbnnr col-md-12 col-sm-12 col-xs-12 ">
+
+            <a href="http://list.qoo10.sg/gmkt.inc/Deal/GroupBuy.aspx">
+            <img src="http://dp.image-gmkt.com/SG/GMKT.IMG/etc/2015/06/12/db26f9c8-fab1-4a2d-82e6-f65150310aed.gif" >
+            </a>
+        </div> -->
+        <div class="clear"></div>
+        <div class="container">
+            <div class="row image_width nopadding">
+                <div class="col-md-9 ">
+                    <a href="#"><img src="{{ STATIC_URL }}/img/banner.jpg" alt="Image"></a>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-6 rightside">
+                        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                    </div>
+                    <div class="col-md-6 rightside">
+                        <p class="lefttext">[June new Update]70%<br> off/New arrivals</p>
+                    </div>
+                    <div class="col-md-6 rightside">
+                        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                    </div>
+                    <div class="col-md-6 rightside">
+                        <p class="lefttext">[June new Update]70%<br> off/New arrivals</p>
+                    </div>
+                </div>
+            </div>
+  <hr/>
+  <div class="clear"></div> 
+  <div class="row image_width nopadding">
+    <div class="col-md-9">
+      <p class="text">Best Seller</p>
+        <ul class="listdiv">
+          <li>All |</li>
+          <li>Fashion |</li>
+          <li>Beauty |</li>
+          <li>Mens. sports |</li>
+          <li>Digital |</li>
+          <li>Home |</li>
+          <li>Baby&food</li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+      <p>premium mall events</p>
+    </div>
+    <div class="col-md-9 nopadding padding_top border_1px">
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+        <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+      </div>
+     <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+        <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+      </div>
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+      </div>  
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+       <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+      </div> 
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+       <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+      </div> 
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+      </div>   
+    </div>
+    <div class="col-md-3 rightsideimg ">
+      <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image" class="side_img padding_top"></a>
+      <p class="nopadding">[Shoexpress] Fitflop Super Jelly Sandals 7 colors! free shiping!</p>
+      <p class="nopadding" style="color:red"> S$73.90</p>
+    </div>
+  </div>
+  <hr/>
+  <div class="clear"></div>
+  <div class="row image_width nopadding">
+    <div class="col-md-9">
+      <p class="text">Qseller</p>
+    </div>
+    <div class="col-md-3 ">
+      <span>Local &amp; e-tickets</span>
+    </div>
+    <div class="col-md-9 nopadding nomargin padding_top border_1px">
+      <div class="col-md-4 nopadding ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/banners/14.jpg" alt="mage"></a>
+      </div>
+      <div class="col-md-4 nopadding ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/banners/14.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4 nopadding ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/banners/14.jpg" alt="Image"></a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="col-md-4">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-4 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="clear"></div>
+  <div class="row image_width nopadding">
+    <div class="col-md-9 ">
+      <div class="col-md-6  border">
+        <p class="text">Group by</p>
+      </div>
+      <div class="col-md-6  border">
+        <p class="text">Daily deal</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+        <p class="text">Daily deal</p>
+    </div>
+    <div class="col-md-9 nopadding padding_top border_1px">
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+          <p class="nopadding fleft">30 sold</p>
+          <p class="nopadding fright" style="color:red"> S$73.90</p>
+        </div>
+      </div>
+       <div class="col-md-3">                 
+         <div class="col-md-12 side_img_sell">
+            <a href="#"><img class="padding_top" src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+         </div>
+         <div class="col-md-12 side_img_sell">
+            <a href="#"><img class="padding_top" src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+         </div>
+         <div class="col-md-12 side_img_sell">
+           <a href="#"><img class="padding_top" src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+         </div>
+      </div>
+                    
+  </div>
+<hr/>
+  <div class="clear"></div>
+  <div class="row image_width nopadding">
+    <div class="col-md-9">
+      <div class="col-md-4 ">
+          Lucky price
+      </div>
+      <div class="col-md-4 ">
+          Lucky price
+      </div>
+      <div class="col-md-4 ">
+        Lucky price
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-9 nopadding padding_top border_1px">
+      <div class="col-md-4 word">
+       <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+       <span>OGAWA Massage Chair </span>
+       <span >S$1.00~ </span>
+      <span > S$419.90</span>
+        </div>
+     
+      <div class="col-md-4 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+         <span>OGAWA Massage Chair </span>
+       <span >S$1.00~ </span>
+      <span > S$419.90</span>
+      </div>
+      <div class="col-md-4 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+         <span>OGAWA Massage Chair </span>
+       <span >S$1.00~ </span>
+      <span > S$419.90</span>
+      </div>
+     
+    </div>
+    <div class="col-md-3 ">
+      <div class="col-md-12 side_img_sell ">
+      <a href="#"><img  src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image" class="padding_top"></a>
+    </div>
+    <div class="col-md-12 side_img_sell ">
+      <a href="#"><img  src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image" class="padding_top"></a>
+    </div>
+  </div>
+ </div>
+ <hr/>
+  <div class="clear"></div>                  
+ <div class="row image_width nopadding">
+    <div class="col-md-9 border_1px padding_top">
+        <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>  
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div> 
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div> 
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>  
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div> 
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div> 
+      <div class="col-md-2 ">
+        <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="col-md-12">
+        <a href="#"><img class="padding_top" src="{{ STATIC_URL }}/images/shop/dress/4.jpg"alt="Image"></a>
+      </div>
+    </div>
+ </div>
+ <hr/>
+  <div class="clear"></div>
+ <div class="row image_width nopadding">
+    <div class="col-md-9 ">
+      <p class="text">Shop plus more</p>
+        <ul class="listdiv">
+           <li>All |</li>
+              <li>Fashion |</li>
+              <li>Beauty |</li>
+              <li>Mens. sports |</li>
+              <li>Digital |</li>
+              <li>Home |</li>
+              <li>Baby&food</li>
+        </ul>
+     </div>
+       <div class="col-md-3"><span>Notice</span></div>
+      <div class="col-md-9 nopadding border_1px padding_top">
+                           <div class="width ">
+                                 <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                            </div>
+                            <div class="width">
+                                 <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                            </div>
+                            <div class="width ">
+                                 <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                            </div>  
+                             <div class="width ">
+                                 <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                            </div> 
+                             <div class="width ">
+                                <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                            </div>   
+                        </div>
+                      
+                        <div class="col-md-3 ">
+                        <div class="col-md-12">
+                        <ul>
+                            <li>Qoo10 Partners Mercy Relief </li>
+                            <li>Qoo10 Named Best Online Retailer 
+                            </li>
+                            <li>Qoo10 Launches Valerie Wang X QStyle Campaign</li>
+                            <li>Qoo10 & SPCA Raise Money for Animal Welfare AdvocacyChange</li>
+                            <li>Qoo10 Black Friday Sale - Great Deals</li>
+                          </ul>
+                        </div>
+                        </div>
+                    </div>
+                     <hr/>
+  <div class="clear"></div>
+                     <div class="row image_width">
+                          <div class="col-md-9 ">
+                           <div class="col-md-12">
+                           <p class="bg_text1">Global Q Shop</p>
+                                </div>
+                           <div class="col-md-12 nopadding border_1px padding_top">
+                            <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="col-md-12">
+                                <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image" class="padding_top"></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                          <div class="col-md-9">
+                                <div class="col-md-12">
+                           <p class="bg_text1">Global Q Shop</p>
+                                </div>
+                                <div class="col-md-12 nopadding border_1px padding_top">
+                            <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                               </div>
+                                <div class="width ">
+                               <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image"></a>
+                               <p class="nopadding">Japan No.1 Hokkaido S$12.90</p>
+                                </div></div>
+                                </div>
+                            
+                        </div>                        
+      <hr/>
+      <div class="clear"></div>
+      </div>
+      <!-- #content end -->
+      {% endblock %}

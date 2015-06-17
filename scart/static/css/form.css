@@ -1,0 +1,749 @@
+
+/* CSS Document */
+
+
+.dont_see_size_btn { width:auto !important; }
+.dont_see_size_btn span { padding:0px 10px 0px 10px !important; display:block; width:auto !important; } 
+.item_size_holder ul li a:hover.idp_add_to_cart_btn { background: #9e2323; }
+.idp_add_to_cart_btn {
+	font-family: Arial;	font-size: 18px;	font-weight: bold;	color: #fff;	line-height:61px;	text-transform: uppercase;	text-decoration: none;
+	display: block;
+	background: url(../images/add_cart_bg.jpg) repeat-x;
+	-moz-border-radius: 5px;	-webkit-border-radius: 5px;	border-radius: 5px;
+	width: 125px;	height: 61px;
+	float: left;
+	margin: 0px 0px 0px 0px;	padding: 0px 19px 0px 19px;
+	cursor:pointer;
+}
+.idp_add_to_cart_btn:hover, .yellow_btn:hover { background:#998557; }
+.preorder_btn { width:157px !important; }
+/***** Item Detail Page *******/
+
+.rating_form_holder { width: 940px;	margin: 0px; }
+.rating_form { width: 960px; }
+.rating_form ul { margin:0px; }
+.rating_form ul li { float: left; border:none; padding:0px; }
+.rating_form label {
+	display: block;
+	font-family: Arial;	font-size: 12px;	font-weight: bold;color: #4e4949;
+	padding: 0px 0px 9px 0px;
+}
+.rating_form_holder .input_box {
+	width: 273px;
+	margin: 0px 0px 20px 0px;
+	padding: 5px 5px 4px 5px;
+}
+#review_rating { cursor: pointer; }
+.rating_form ul li.rating_form_rt_col { margin: 0px 0px 0px 59px; /*Edit by RATHNAVEL*/ }
+.rating_form_rt_col .message_textarea {
+	width: 589px; max-width: 589px; height:93px; min-height:93px;	margin:0px; /*Edit by RATHNAVEL*/ 
+}
+.rating_form_rt_col .gry_btn {
+	font-size: 12px;
+	float: left;
+	margin: 25px 0px 0px 0px;	#margin: 25px 0px 0px -66px;
+}
+.rating_form_rt_col .check_box {
+	margin: 42px 10px 0px 10px;	#margin: 38px 10px 0px 10px; 
+	float: left;
+}
+.rating_form_rt_col span {
+	padding: 43px 10px 0px 0px;
+	display: block;
+	float: left;
+	color:#666666;
+}
+.message_textarea {
+	display: block;
+	background: url(http://images2.solestruck.com/gae/newdesign/images/input_box_bg.jpg) repeat-x;
+	margin: 10px 0px 0px 0px;	padding: 10px 5px 5px 10px;	
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px;	-webkit-border-radius: 3px;	border-radius: 3px;
+	height: 88px;	width: 445px;	
+	font-family:Arial, Helvetica, sans-serif;	font-size:12px;
+}
+.input_box {
+	display: block;
+	background: url(http://images2.solestruck.com/gae/newdesign/images/input_box_bg.jpg) repeat-x;
+	margin: 10px 0px 10px 0px;	padding: 5px 0px 4px 5px;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px;	-webkit-border-radius: 3px;	border-radius: 3px;
+	height: 21px;	width: 450px;
+	font-family:Arial, Helvetica, sans-serif;	font-size:12px;	 color:#4E4949;
+}
+.color_select_ipad { width:120px !important; margin:0px 10px 0px 15px; }
+.login_check_box { margin: 4px 8px 0px 0px; }
+.login_form_holder lable,
+.whislist_form_holder lable {
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	color: #4e4949;
+}
+.gry_btn, .brw_btn {
+	background: #4d4d4d;
+	-moz-border-radius: 4px;	-webkit-border-radius: 4px;	border-radius: 4px;
+	font-size: 14px;	color: #fff;	font-weight: bold;	font-family:arial;
+	border: none;
+	margin: 20px 0px 0px 0px;	padding:15px 18px;
+	cursor:pointer;	display:inline-block;
+	text-decoration:none;
+}
+.thankyou .gry_btn {margin:0px 0px 20px 0px !important;  }
+.gry_btn:hover { background:#404040; }
+.brw_btn { background:#b39c66; color:#fff !important; }
+.brw_btn:hover { background:#998557; }
+span.gry_btn { padding: 20px 18px; }
+.login_form_holder .gry_btn { display:block;  }
+
+/******* Sort Page *************/
+.item_selection_pannel {
+	width: 960px;
+	padding: 10px 0px 10px 0px; #padding: 10px 0px 0px 0px;
+	border: 1px solid #EEEEEE;	border-width: 1px 0px;
+	position:relative;
+	left:0px;
+	z-index:99;
+	background: url(http://images2.solestruck.com/gae/newdesign/images/item_selection_pannel_bg.png) 0px 0px repeat;
+}
+.your_selection { margin:10px 0px 0px 0px; border-bottom:1px solid #eeeeee; }
+.your_selection a {
+	display: block;
+	float: left;
+	font-family: Arial;	font-size: 14px;	font-weight: bold;	color: #4c4c4c;	text-decoration: none;
+	padding: 0px 0px 10px 0px;	margin: 5px 0px -1px 0px;
+	z-index: 100;
+	position: relative;
+}
+
+.clear_selection { margin: 0px; float:left; }
+.your_selection  ul li {
+	border: 1px solid #d9d9d9;
+	-border-radius: 3px;	-moz-border-radius: 3px;	-webkit-border-radius: 3px;
+	float: left;
+	margin: 0px 7px 10px 0px;
+	font-family: Arial;	font-size: 12px;	color: #444444;	font-weight: normal;
+	
+}
+.your_selection_close {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 2px -349px no-repeat;
+	width:14px;	height:10px;
+	float:left;
+	border-right: 1px solid #EEEEEE;
+	margin-right:3px;	padding: 5px 3px 4px 0px;
+	cursor:pointer;
+}
+.your_selection ul li span {
+	padding: 4px 10px 1px 4px;	margin:0px;
+	float:left;
+	border:none;
+}
+
+.your_selection span {
+	color: #4c4c4c;	font-family: Arial;	font-size: 12px;
+	cursor: pointer;
+	display: block;
+	margin: 0px 0px 0px 0px;	padding:8px 0px 0px 15px;
+	
+}
+.style_selectpannel,
+.size_select_pannel,
+.color_select_pannel,
+.price_select_pannel,
+.brand_select_pannel,
+.gender_select_pannel {
+	
+	width: 176px;
+	margin: 0px 14px 0px 0px;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;	-moz-border-radius: 3px;	-webkit-border-radius:3px;
+	float: left;
+	
+}
+.item_selection_pannel_s .style_selectpannel,
+.item_selection_pannel_s .size_select_pannel,
+.item_selection_pannel_s .color_select_pannel,
+.item_selection_pannel_s .price_select_pannel,
+.item_selection_pannel_s .brand_select_pannel,
+.item_selection_pannel_s .gender_select_pannel {
+	width:144px;
+}
+.item_selection_pannel_m .style_selectpannel,
+.item_selection_pannel_m .size_select_pannel,
+.item_selection_pannel_m .color_select_pannel,
+.item_selection_pannel_m .price_select_pannel,
+.item_selection_pannel_m .brand_select_pannel,
+.item_selection_pannel_m .gender_select_pannel {
+	width:224px;
+}
+
+
+.style_selectpannel h2,
+.size_select_pannel h2,
+.color_select_pannel h2,
+.price_select_pannel h2,
+.brand_select_pannel h2,
+.gender_select_pannel h2
+	{
+	background: url(http://images2.solestruck.com/gae/newdesign/images/select_down_arrow.png) 155px 0px no-repeat;
+	padding: 7px 0px 5px 10px;
+	margin: 0px;
+	font-family: Arial;	font-size: 12px;	font-weight: normal;color: #4c4c4c;
+	cursor: pointer;
+}
+.item_selection_pannel_s .style_selectpannel h2,
+.item_selection_pannel_s .size_select_pannel h2,
+.item_selection_pannel_s .color_select_pannel h2,
+.item_selection_pannel_s .price_select_pannel h2,
+.item_selection_pannel_s .brand_select_pannel h2,
+.item_selection_pannel_s .gender_select_pannel h2 {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/select_down_arrow.png) 122px 0px no-repeat;
+}
+.item_selection_pannel_m .style_selectpannel h2,
+.item_selection_pannel_m .size_select_pannel h2,
+.item_selection_pannel_m .color_select_pannel h2,
+.item_selection_pannel_m .price_select_pannel h2,
+.item_selection_pannel_m .brand_select_pannel h2,
+.item_selection_pannel_m .gender_select_pannel h2 {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/select_down_arrow.png) 203px 0px no-repeat;
+}
+.style_selectpannel ul,
+.size_select_pannel ul,
+.color_select_pannel ul,
+.price_select_pannel ul,
+.brand_select_pannel ul,
+.gender_select_pannel ul
+	{
+	overflow-y: auto;
+	padding: 0px 0px 0px 10px;
+	width: 168px;	height: 143px;
+}
+.item_selection_pannel_s .style_selectpannel ul,
+.item_selection_pannel_s .size_select_pannel ul,
+.item_selection_pannel_s .color_select_pannel ul,
+.item_selection_pannel_s .price_select_pannel ul,
+.item_selection_pannel_s .brand_select_pannel ul,
+.item_selection_pannel_s .gender_select_pannel ul {
+	width: 134px;
+}
+.item_selection_pannel_m .style_selectpannel ul,
+.item_selection_pannel_m .size_select_pannel ul,
+.item_selection_pannel_m .color_select_pannel ul,
+.item_selection_pannel_m .price_select_pannel ul,
+.item_selection_pannel_m .brand_select_pannel ul,
+.item_selection_pannel_m .gender_select_pannel ul {
+	width: 214px;	
+}
+.your_selection ul {
+
+	padding: 5px 0px 0px 0px;	margin: 0px 0px 0px 0px;
+}
+.style_selectpannel ul li,
+.size_select_pannel ul li,
+.color_select_pannel ul li,
+.price_select_pannel ul li,
+.brand_select_pannel ul li, 
+.gender_select_pannel ul li
+	{
+	padding: 4px 0px 5px 0px;
+	font-family: Arial;	font-size: 12px;
+	line-height: 14px;
+	font-weight: normal;	color: #4d4d4d;
+}
+.style_selectpannel ul li label,
+.size_select_pannel ul li label ,
+.color_select_pannel ul li label,
+.price_select_pannel ul li label,
+.brand_select_pannel ul li label,
+.gender_select_pannel ul li label {
+	cursor:pointer; display:block; padding:0px 0px 0px 20px;
+	}
+.select_pannel_checkbox { display: block; float: left; margin: 0px 10px 0px -20px; }
+.style_selectpannel span,
+.size_select_pannel span,
+.color_select_pannel span,
+.brand_select_pannel span,
+.gender_select_pannel span
+	{
+	display: block;
+	padding: 7px 0px 7px 10px;
+	font-family: Arial;	font-size: 12px;	color: #4d4d4d;
+	cursor: pointer;
+	border-top: 1px solid #d9d9d9;
+}
+.price_select_pannel span {
+	display: block;
+	padding: 7px 0px 7px 10px;	#padding: 4px 0px 7px 10px;	margin: 0px 0px 0px 0px;		
+	color: #4d4d4d;	font-family: Arial;	font-size: 12px;
+	cursor: pointer;
+	border-top: 1px solid #d9d9d9;
+}
+.empty {
+	height: 33px; #height: 23px;
+}
+.price_select_pannel b {
+	float: left;
+	color: #4e4949;	font-weight: normal;	font-family: Arial;	font-size: 12px;
+	margin:7px 0px 0px 5px;
+	
+}
+.slider_col1, .slider_col2 {	padding-bottom:20px; }
+	
+
+.slider_col2 b { padding: 0px !important;	margin-left:0px; }
+
+.price_select_pannel h3 {
+	padding: 10px 0px 6px 9px;
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	color: #4e4949;
+	border-top: 1px solid #d9d9d9;
+}
+.amount1 {
+	height: 12px;
+	border: 0px;
+	color: #4e4949;	font-family: Arial;	font-size: 12px;
+	padding: 0px;
+	float:left;
+	margin:6px 0px 0px 0px;
+}
+.amount { float:none !important; margin:10px 10px 0px 10px; font-size:12px; color:#4c4c4c; } 
+.amount1 { text-align:right; width:23px; }
+.ui-slider {
+	position: relative;
+	width: 15px;	height:75px;
+	background: #a8a8a8 ;
+	margin-left:40%;
+	border-radius:10px;	-moz-border-radius:10px;	-webkit-border-radius:10px;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: .2em;
+	cursor: default;
+	background: #000;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+}
+.ui-widget-header {
+    background: #dbdbdb !important;
+    border: 1px solid #AAAAAA;    
+    font-weight: bold;	color: #222222;
+    height:7px;
+	
+}
+.slider_col2 .ui-slider { background-color: #dbdbdb !important; }
+.slider_col2 .ui-widget-header { background: #ababab !important; border-radius:10px 0px 0px 10px; }
+.ui-slider-horizontal {
+	background: #ababab;	
+	width: 154px;	height: 7px;
+	margin: 10px 6px 0px 10px;
+}
+.slider_col2 .ui-slider-horizontal { width:110px!important; }
+.item_selection_pannel_s .slider_col1 .ui-slider-horizontal { width: 120px !important; }
+.item_selection_pannel_m .slider_col1 .ui-slider-horizontal { width: 200px !important; }
+
+.item_selection_pannel_s .slider_col2 .ui-slider-horizontal { width: 79px !important; }
+.item_selection_pannel_m .slider_col2 .ui-slider-horizontal { width: 156px !important; }
+.ui-slider-horizontal .ui-slider-handle {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/slider.png) 0px 0px no-repeat;
+	width: 15px;	height: 15px;
+	margin: -5px 5px 0px 0px;
+	cursor: pointer;
+}
+.ui-slider-vertical .ui-slider-handle {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/slider.png) 0px 0px no-repeat;
+	width: 22px;	height: 11px;
+	cursor: pointer;
+	float:left;
+	margin:0px 0px 0px -2px;
+}
+.default_value{
+	border:none !important;
+	color: #4E4949;	font-family: Arial;	font-size: 12px;	font-weight: bold;
+	}
+
+.fillter_close { 
+	width:100px; 
+	background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 2px -351px no-repeat; 
+	padding:0px 0px 0px 20px; margin:8px 0px 0px 0px;
+	font-size:12px; color:#4c4c4c;
+	cursor:pointer; 
+}
+.filter_white_space { height:10px; border-top:1px solid #dbdbdb; }
+.sale_slider_disabled { height:66px; }
+
+/**************** brand, vintage, search view pagination ********/
+.brand_view_pageination { clear:both; }
+.brand_view_pageination ul {  width:800px; margin:0px auto;  }
+.brand_view_pageination ul li {
+	float: left;
+	font-family: Arial;	font-size: 10px;	font-weight: bold;
+	padding: 17px 10px;
+}
+.brand_view_pageination ul li.first{ margin-right:65px;	padding-left:0px; }
+.brand_view_pageination ul li.last{ float:right; padding-right:0px; }
+.brand_view_pageination ul li a {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 5px -599px no-repeat;
+	font-family: Arial;	font-size: 14px;	color: #ffffff;	text-decoration: none;
+	border-radius:3px;	-moz-border-radius:3px;	-webkit-border-radius:3px;
+	width:30px;
+	text-align:center;
+	line-height:30px;
+	display:block;
+	float:left;
+}
+
+.brand_view_pageination ul li a.next_page, .brand_view_pageination ul li a.previous_page {
+	background:url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 10px -954px no-repeat;
+	text-decoration: none;
+	height:30px;
+	border:1px solid #d9d9d9;
+	margin-right:10px;
+}
+.brand_view_pageination ul li a.previous_page { background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 10px -976px no-repeat;  } 
+.brand_view_pageination ul li a.page_number, .brand_view_pageination ul li a.more_page { 
+	background: #ffffff;
+	color:#4d4d4d;
+	border:1px solid #d9d9d9;
+	margin-right:10px;
+	cursor: pointer;
+	}
+.brand_view_pageination ul li a.page_number:hover, 
+.brand_view_pageination ul li a.page_number_selected, .next_selected, .back_selected { background: #4d4d4d; margin-right:10px; color:#fff; cursor: pointer;  border:1px solid #4d4d4d !important;}
+.brand_view_pageination ul li.third {
+	font-size:14px;	color:#4d4d4d;	font-weight:normal;	line-height:28px;
+	border-left:1px solid #d9d9d9;
+}
+.next_selected { background:#4d4d4d url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -631px no-repeat !important; }
+.back_selected { background:#4d4d4d url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -598px no-repeat !important; }
+.brand_view_pageination ul li.third .custom_dropdown {
+	width:60px;	height: 29px;
+	margin:0px 10px 0px 0px;
+}
+.brand_view_pageination ul li.third .custom_dropdown .custom_drop_nav {
+	background:url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) -4px -651px no-repeat;
+	border-left:1px solid #d9d9d9; 
+	height: 29px;	width:20px;
+}
+.brand_view_pageination ul li.third .select_popup {
+	width:20px;	height:30px;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#4c4c4c;
+	}
+.brand_view_pageination ul li.third ul li {
+	float:none;
+	font-size:14px;	font-weight:normal;	line-height:11px;
+}
+	
+.brand_view_pageination ul li.third .custom_dropdown ul { width:60px; }
+.brand_view_pageination ul li span { font-family: Arial; font-size: 10px; }
+.brand_view_heading { float:left; }
+
+/******** custom_dropdown ******************/
+.custom_dropdown div {
+	float: left;
+	font-size: 10px;	font-family: Arial;	color: #4e4949;
+	padding: 5px 0px 0px 10px;
+}
+.custom_drop_nav {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/select_down_arrow.png) -2px 0px no-repeat;
+	width: 16px;	height: 24px;
+	float: right !important;
+	margin: 0px 3px 0px 0px;	padding: 0px !important;
+	border-left:1px solid #cccccc;
+}
+.custom_dropdown {
+	width: 60px;	height: 24px;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 4px;	-webkit-border-radius: 4px;	border-radius: 4px;
+	cursor: pointer;
+	margin: 0px 10px 10px 0px;
+	position:relative;
+	float:left;
+}
+.custom_dropdown_102 { width:102px !important; } 
+.custom_dropdown ul {
+	 background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 0 0 4px 4px;
+    clear: both;
+    display: none;
+    left: -1px;
+    margin: -5px 0 0;
+    max-height: 80px !important;
+    overflow-y: auto;
+    padding: 5px 0 0;
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    z-index: 500;
+}
+
+.custom_dropdown ul li {
+	border: none;
+	font-family: Arial;	font-size: 12px;	color: #4e4949;
+	padding: 5px 0px 5px 10px;
+	text-transform:uppercase;
+}
+.custom_dropdown ul li:hover { background: #006CB3; color: #fff; }
+.drop_down_68,.drop_down_54 {
+	width: 68px !important;	height: 19px;
+	float: left;
+	margin: 10px 15px 0px 0px;
+}
+.drop_down_54 { width: 54px !important; }
+.drop_down_89 {
+	width: 89px !important;	height: 19px;
+	float: left;
+	margin: 0px 0px 0px 15px;
+}
+.drop_list_68 { width: 68px !important; }
+.drop_list_54 { width: 54px !important; }
+.drop_list_89 { width: 89px !important; }
+
+
+/***** my account *******/
+.input_field_220 {
+	border: none;
+	width: 220px;
+	padding: 8px 0px 4px 10px;
+	background: none;
+	font-family: Arial, Helvetica, sans-serif;	font-size: 14px;	font-weight: bold;	color: #4e4949;	text-transform: capitalize;
+	float: left;
+	cursor:pointer;
+	text-transform:uppercase;
+}
+.custom_dropdown_220 {
+	width: 257px !important;	height:29px;
+	margin-top: 10px !important;	margin-bottom: 20px !important;
+}
+.custom_dropdown_220 ul { width: 257px !important; margin:0px 0px 0px 1px ; }
+
+.custom_dropdown_220 .custom_drop_nav {
+	 background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) no-repeat -4px -651px;
+	 border-left: 1px solid #D9D9D9;
+	 height:29px;	width:20px;
+	}
+
+/********** Checkout Page ***********/
+
+.short_input_fields { float: left; width: 285px; margin: 5px 5px 0px 0px !important; }
+.check_out_radio_button { float: left;}
+.payment_radio_button { float: left; margin: 20px 0px 0px 0px; margin:17px\9 0px\9 0px\9 0px\9; #margin:14px 0px 0px 0px; /* Edit (Rathnavel)*/}
+.billing_radio_button {
+	float: left;
+	margin: 28px 0px 0px 0px; #margin: 12px 0px 0px 0px;	margin: 12px\9 0px\9 0px\9 0px\9;/* Edit (Rathnavel)*/
+}
+.shipping_radio_button {
+	float: left;
+	margin: 15px 0px 0px 0px; #margin: 10px 0px 0px 0px;	margin: 10px\9 0px\9 0px\9 0px\9;
+}
+.card_type_radio_button { float: left;	margin: 5px 0px 0px 0px; }
+.check_out_signin_holder label {
+	display: block;
+	padding: 4px 60px 38px 0px;
+	font-family: Arial;	color: #4e4949;	font-size: 12px;	font-weight: normal;	line-height: 17px;
+	float: left;	
+}
+.check_out_signin_holder .input_box {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/input_box_bg.jpg) repeat-x;
+	width: 440px;	height: 19px;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px;	-webkit-border-radius: 3px;	border-radius: 3px;
+	margin: 9px 20px 16px 0px;	padding: 5px 10px;
+	font-size:12px;	color: #444444;
+	float:left;
+	clear:both;
+}
+.check_out_sign_in i {
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	float: left;	color: #d22e2e;	font-style: normal;
+	padding: 2px 0px 0px 13px;
+	display:none;
+}
+.short_select {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/input_box_bg.jpg) repeat-x;
+	float: left;
+	width: 285px;	height: 24px;
+	margin: 10px 5px 0px 0px !important;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px;	-webkit-border-radius: 3px;	border-radius: 3px;
+}
+label.email_alerts_label, 
+.see_password_label, 
+.checkbox_label
+ {
+	float: left;
+	margin: 12px 0px 10px 8px;	padding-bottom:5px;
+	font-family: Arial;	color: #868686;
+}
+.check_out_signin_holder .intrnl_ordr {color: #868686; display:none;}
+.check_out_signin_holder h4, 
+.checkout_form label {
+	padding: 0px;
+	color: #7e7e7e;	font-family: Arial;	font-size: 14px;	font-weight: bold;
+	float:left; margin: 10px 0px 0px;
+	
+}
+
+.checkout_form .short_name_hlder { float: left; width: 230px; margin: 0px 8px 0px 0px; }
+.check_out_payment .checkout_form .short_name_hlder { width: 255px; }
+.card_number_holder { margin:-20px 8px 0px 0px !important; }
+.exp_holder { margin:20px 8px 0px 0px !important; }
+.no_margin { margin: 10px 0px 10px 0px !important; }
+.check_out_signin_holder label.see_password_label { padding-bottom: 28px;}
+.email_alerts_check_box { float: left; margin: 12px 10px 0px 0px !important; margin:10px\9 10px\9 0px\9 0px\9; }
+.yellow_btn {
+	background: url(http://images2.solestruck.com/gae/newdesign/images/add_cart_bg.jpg) 0px 0px repeat-x;
+	-moz-border-radius: 5px;	-webkit-border-radius: 5px;	border-radius: 5px;
+	font-family: Arial;	font-size: 18px;	color: #fff;	font-weight: bold;
+	border: none;
+	margin: 23px 0px 0px 0px;	padding: 16px 40px 16px 13px; #padding:16px 20px 16px 6px;
+	cursor: pointer;
+	position:relative;
+	width:80px;
+}
+.processing_btn { padding:0px 19px 0px 44px; position:relative; }
+.checkout_form .processing_btn { padding:16px 44px 16px 44px; position:relative; }
+
+.complete_purchase .yellow_btn, .check_out_payment .yellow_btn  { width:172px !important; padding:16px 13px 16px 13px;  }
+.complete_purchase .processing_btn { padding:16px 19px 16px 44px !important; position:relative; }
+.checkout_back_btn {
+	border: none;
+	cursor: pointer;
+	padding: 5px 0px 0px 17px;	margin-top:15px;
+	font-family: Arial;	font-size: 14px;	color: #4d4d4d;
+	float:left;
+	background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) -10px -821px no-repeat;
+}
+.checkout_discount .input_box {
+	width: 152px;	height: 15px;
+	margin: -5px 5px 0px 28px; #margin: -5px 0px 0px 27px;
+	float:left;
+}
+.update_btn {
+	cursor: pointer;
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	text-decoration:underline;	color: #4d4d4d;
+	float: right;
+	background:none;
+	border:none;
+	padding:0px;
+}
+
+.cart_shipping_payment_gateway {
+	display: block;
+	padding: 0px 0px 30px 0px;	padding: 0px\9 0px\9 30px\9 0px\9;	margin: 0px;
+}
+.cart_shipping_payment_gateway h3 {
+	padding: 0px 0px 20px 0px;
+	color: #4E4949;	font-family: Arial;	font-size: 14px;	font-weight: bold;	
+}
+.paymnet_gateway_return_customer span {
+	float: left;
+	display: block;
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	color: #4e4949;	
+	padding: 28px 30px 0px 10px;	padding: 18px\9 30px\9 0px\9 10px\9;
+}
+.cart_shipping_payment_gateway span {
+	float: left;
+	display: block;
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	color: #4e4949;
+	padding: 10px 0px 0px 10px;
+	width: 140px;
+	line-height:18px;
+}
+.require_signature { padding: 20px 0px 10px 10px !important; width: 420px !important; }
+.cart_shipping_payment_gateway span.price {
+	color: #808080;	font-weight:bold;
+	padding: 10px 0px 0px 0px !important;
+	width: 169px;
+}
+.shipping_alert { 
+	background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px 3px no-repeat;
+	#background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px 6px no-repeat;/* Edit (Rathnavel)*/  
+	padding:4px 0px 3px 20px !important; 
+	font-size: 12px !important; 
+} 
+
+/*****billing form******/
+.check_out_short_inputfield,
+.input_short { float:left; width: 203px !important; margin: 10px 0px 13px 0px; padding: 5px 10px;}
+.input_medium { width: 220px !important; }
+.input_short160 { width: 60px !important; margin-right:7px !important;}
+
+.custom_dropdown_200 {
+	width: 221px !important;	height:29px;
+	margin-top: 10px !important;	margin-bottom: 6px !important;
+}
+.custom_dropdown_200 ul { width: 221px !important; margin:0px ; }
+.custom_dropdown_200 .input_field_220 { width: 180px;}
+.custom_dropdown_200 .custom_drop_nav {
+	 background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) no-repeat -4px -651px;
+	 border-left: 1px solid #D9D9D9;
+	 height:29px;	width:20px;	 
+	}
+.check_out_signin_holder .checkbox_label { font-weight:bold; font-size:14px; padding: 4px 60px 28px 4px; }
+
+
+/***** shipping form (checkout)****/
+
+.payment_process_holder i,
+.message_holder i {
+	font-family: Arial;	color: #d22e2e;	font-size: 12px;	font-weight: normal;	font-style: normal;
+	padding: 2px 0px 0px 7px;
+	float: left;
+	display:none;
+}
+.payment_process_holder i { padding:12px 0px 0px 7px !important; }
+.error_white_space i {
+	padding: 0 !important;
+}
+.info_edit_form i {
+	font-family: Arial;	color: #d22e2e;	font-size: 12px;	font-weight: normal;	font-style: normal;	
+	padding: 0px 0px 0px 0px;
+	float: left;
+	display: none;
+}
+.edit_align i { padding: 0px 0px 0px 13px !important; }
+
+li.discount_amount_area h3 {
+	float: left;
+	display: block;
+	width: 212px;	#width: 180px; 
+	font-family: Arial;	font-size: 12px;	text-align: right;	
+	font-weight: bold;	color: #4e4949;		
+}
+.cart_shipping_payment_gateway h4 { padding-bottom:18px;}
+
+
+/******* checkout erorr *********/
+.checkout_error { 
+	border-top:1px solid #e6e6e6;	background-color: #f26d6d; 
+	text-align:center;	color:#ffffff;	font-weight:bold;
+	padding: 10px 20px;	margin: 0px 0px 20px 0px;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	font-size:14px;
+	box-shadow: inset 0px 3px 3px #e76868;
+	-moz-box-shadow: inset 0px 3px 3px #e76868;
+	-webkit-box-shadow: inset 0px 3px 3px #e76868;
+	text-align:left;
+	display:block;
+}
+.payment_process_content .checkout_error { 
+	width:461px;
+} 
+.checkout_error h4 { font-size:14px;	line-height:20px; }	
+.checkout_error p { font-size:13px; }
+.cart_shoe_details .gry_btn { float:right ; color: #ffffff !important; padding: 9px 20px 8px !important; margin:-3px 0px 0px; } 
+
+.checkout_your_shoppingcart ul li.checkout_noshoe_error h3,
+.checkout_your_shoppingcart ul li.checkout_noshoe_error .cus_select p,
+.checkout_your_shoppingcart ul li.checkout_noshoe_error span,
+.checkout_your_shoppingcart ul li.checkout_noshoe_error label,
+.checkout_your_shoppingcart ul li.checkout_noshoe_error input { color: #a5a5a5;} 
+.checkout_your_shoppingcart ul li.checkout_noshoe_error .checkout_error { display:block; margin:15px;}
+.checkout_your_shoppingcart ul li.checkout_noshoe_error .shpping_cart_price { display:none; }
+	
+	
+	

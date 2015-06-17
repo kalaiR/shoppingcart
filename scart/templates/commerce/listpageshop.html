@@ -1,0 +1,367 @@
+{% extends 'base_inner.html' %}
+{% load i18n %}
+{% block content %}
+
+<!-- Page Title
+        ============================================= -->
+        <section id="page-title">
+
+            <div class="container clearfix">
+               <!--  <h1>Shop</h1>
+                <span>Start Buying your Favourite Theme</span> -->
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Shop</li>
+                </ol>
+            </div>
+
+        </section><!-- #page-title end -->
+     <!-- filter ============================================ -->
+    <!-- <div class="filter_wrapper container">
+        <div class="filter_header">
+            <div class="expand_filter col-md-4 push-left"> a</div>
+            <div class="expand_filter col-md-4 push-left"> b</div>
+            <div class="expand_filter col-md-4 push-left"> c</div>
+        </div><!- filter_header ->
+        <div class="filter_list">
+             <div class="filter_list_expand col-md-4 push-left"> 
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>    
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    
+                </ul>
+             </div>
+            <div class="filter_list_expand col-md-4 push-left"> 
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>    
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    
+                </ul>
+             </div>
+            <div class="filter_list_expand col-md-4 push-left"> 
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>    
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id =""><label> a </label>
+                    </li>
+                    
+                </ul>
+             </div> ->
+        </div><!- filter_list ->
+    </div><!- filter_wrapper --> 
+     <!-- ============================================ -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+
+                    <!-- Shop
+                    ============================================= --> <!--
+                    <div id="shop" class="clearfix">
+
+                        {% for product in products %}
+
+                        <div class="produc clearfix">
+                            <div class="product-image">
+                                <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/5.png" alt="Checked Short Dress"></a>
+                                 <a href="#"><img src="{{ STATIC_URL }}/images/shop/dress/4-1.jpg" alt="Checked Short Dress"></a> 
+                                <div class="sale-flash">50% Off*</div>
+                                <div class="product-overlay">
+                                    <form class="fl" action="{% url addtobasket %}?q={{ request.REQUEST.q }}&next={{ request.path }}" method="post" name="listingform">
+                                        {% csrf_token %}
+                                            <button name="selected_listpage" type="submit" class="add-to-cart" value="{{ product.id }}">
+                                            <input type="hidden" name="def_quantity" value = "1" />
+                                                <i class="icon-shopping-cart"></i><span> Add to Cart</span>
+                                            </button>
+                                            <a href="{{ STATIC_URL }}/include/ajax/shop-item.html" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i>
+                                            <span> Quick View</span>
+                                            </a>   
+                                    </form>
+                                    <a href="#" class="add-to-cart">
+                                            <i class="icon-shopping-cart"></i><span> Add to Cart</span>
+                                    </a> 
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <div class="product-title"><h3><a href="{% url product_details product.id %}">{{product.product_title}}</a></h3></div>
+                                <div class="product-price"><del>$24.99</del> <ins>{{product.product_price}}</ins></div>
+                                <div class="product-rating">
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star-half-full"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+                    </div>--> <!-- #shop end -->
+                    <div class="container">
+                    {% for product in products %}
+                        <div class="row one_shipping_group">
+                            <div class="col-md-6 image_width br_right">
+                                <div class="col-md-12">Deal plus</div>
+                                <div class="col-md-6"><a href="{% url product_details product.id %}">{{product.product_title}}><img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress"></a>
+                                </div>
+                                <div class="col-md-6"><a href="{% url product_details product.id %}">{{product.product_title}}><img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress"></a></div>
+                            </div>
+                            <div class="col-md-6 image_width padding_zero">
+
+                                <div class="col-md-12 bottom_border padding_bottom ">
+                                    <div class="col-md-12">new arrival</div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                </div>
+                                 <div class="col-md-12 padding_bottom">
+                                    <div class="col-md-12">new arrival</div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                    <div class="col-md-3"><img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row image_width image one_shipping_group">
+                            <div class="col-md-3">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="col-md-3">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="col-md-3">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/100.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="col-md-3">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row one_shipping_group">
+                        <div class="col-md-12 ">
+                            <div class="col-md-6">
+                               <div class="col-md-4"><a href="#">Link1</a></div> 
+                               <div class="col-md-4"><a href="#">Link2</a></div>
+                               <div class="col-md-4"><a href="#">Link3</a></div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                        </div>
+                        
+                            <div class="col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Lorem ipsum</div>
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae purus finibus, dapibus mi id, efficitur ipsum. Ut mauris sem, tincidunt venenatis eleifend quis, facilisis nec risus. In hac habitasse platea dictumst. Nulla maximus blandit ligula nec mollis. Nulla facilisi. Sed lacinia eget magna quis finibus. </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Lorem ipsum</div>
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae purus finibus, dapibus mi id.</div>
+                                </div>
+                            </div>
+                   
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        <div class="row image_width bottom_border padding_bottom">
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div> 
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                            <div class="width">
+                                <span class="text-center">Lorem ipsum</span>
+                                <img src="{{ STATIC_URL }}/images/shop/dress/5-1.png" alt="Checked Short Dress">
+                            </div>
+                        </div>
+                        
+                    </div>
+                     {% endfor %}
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+  {% endblock %}

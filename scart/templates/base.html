@@ -1,0 +1,272 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Globalen" />
+
+    <!-- Stylesheets
+    ============================================= -->
+	
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/dark.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/font-icons.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/animate.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/responsive.css" %}" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+	<script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins.js" %}"></script>
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="{% static "include/rs-plugin/js/jquery.themepunch.tools.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "include/rs-plugin/js/jquery.themepunch.revolution.min.js" %}"></script>
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="{% static "include/rs-plugin/css/settings.css" %}" media="screen" />
+
+    <!-- Document Title
+    ============================================= -->
+	<title>Home - ShopCart </title>
+
+    <style>
+
+        .revo-slider-emphasis-text {
+            font-size: 58px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+    </style>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+  
+    
+        <!-- Top Bar
+        ============================================= -->
+        <div id="top-bar" class="hidden-xs">
+
+            <div class="container clearfix">
+
+                <div class="col_half nobottommargin">
+
+                    
+
+                </div>
+
+                <div class="col_half col_last fright nobottommargin">
+
+                    <!-- Top Links
+                    ============================================= -->
+                    <div class="top-links">
+                        <ul>
+                            <li><a href="#">USD</a>
+                                <ul>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">AUD</a></li>
+                                    <li><a href="#">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">EN</a>
+                                <ul>
+                                    <li><a href="#"><img src="{{ STATIC_URL }}/images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#"><img src="{{ STATIC_URL }}/images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#"><img src="{{ STATIC_URL }}/images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Login</a>
+                                <div class="top-link-section">
+                                    {% if user.is_authenticated %}
+                                         <form action="{% url logout_view %}" method="post">
+                                            {% csrf_token %} 
+                                            <a href="{% url logout_view %}"> Logout {{request.user}}</a>
+                                        </form>
+                                    {% else %}
+                                        <form id="top-login" role="form" action="{% url login_view %}" method="post">
+                                            {% csrf_token %}
+                                            <div class="input-group" id="top-login-username">
+                                                <span class="input-group-addon"><i class="icon-user"></i></span>
+                                                <input type="email" class="form-control" placeholder="Email address" required="" name="auth_name">
+                                            </div>
+                                            <div class="input-group" id="top-login-password">
+                                                <span class="input-group-addon"><i class="icon-key"></i></span>
+                                                <input type="password" class="form-control" placeholder="Password" required="" name="auth_paw">
+                                            </div>
+                                            <div class="clear_both"> </div>
+
+                                            {% if request.REQUEST.st %}
+                                                {% for message in messages %}
+                                                    {{ message }}
+                                                {% endfor %}
+                                            {% endif %}
+
+                                            <label class="checkbox">
+                                              <input type="checkbox" value="remember-me"> Remember me
+                                            </label>
+                                            <button class="btn btn-danger btn-block" type="submit">Sign in</button>
+                                            <input type="hidden" name="next" value="{{request.path}}{% if request.REQUEST.q %}?{{request.GET.urlencode}}{% endif %}" />
+                                        </form>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>{% if user.is_authenticated %}
+                                    {% if user.first_name %}
+                                        {{ user.first_name }}
+                                    {% else %}
+                                        Guest
+                                    {% endif %}
+                                {% endif %}                
+                            </li>
+
+                        </ul>
+                    </div><!-- .top-links end -->
+
+                </div>
+
+            </div>
+
+        </div><!-- #top-bar end -->
+ <!--  {% if not user.is_authenticated %} -->        
+ <!-- {% endif %} -->
+        <!-- Header
+        ============================================= -->
+        <header id="header">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+                    <h1>Shopping Logo</h1>       
+                        <!-- <a href="{% url home %}" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="{{ STATIC_URL }}/images/logos.png" alt="Shopping Logo"></a> -->
+                        <!--<a href="{% url home %}" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="{{ STATIC_URL }}/images/logo@2x.png" alt="Canvas Logo"></a> -->
+                    </div><!-- #logo end -->
+
+                    {% include "navmenu.html" %}
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+
+        {% block content %} {% endblock %}
+        
+
+        
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        Copyrights &copy; 2014 All Rights Reserved by Shoppingcart Inc.<br>
+                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                    </div>
+
+                    <div class="col_half col_last tright">
+                        <div class="fright clearfix">
+                            <a href="#" class="social-icon si-small si-borderless si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-gplus">
+                                <i class="icon-gplus"></i>
+                                <i class="icon-gplus"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                                <i class="icon-pinterest"></i>
+                                <i class="icon-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
+                                <i class="icon-vimeo"></i>
+                                <i class="icon-vimeo"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
+                                <i class="icon-yahoo"></i>
+                                <i class="icon-yahoo"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <i class="icon-envelope2"></i> contact@shoppingcart.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> ShoppingOnSkype
+                    </div>
+
+                </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="{% static "js/functions.js" %}"></script>
+
+</body>
+</html>

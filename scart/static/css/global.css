@@ -1,0 +1,234 @@
+
+
+
+/* CSS Document */
+
+
+h1 {font-size:36px; padding:25px 0px 20px 0px !important;  border-bottom: 1px solid #EEEEEE !important; float:none !important; font-weight:bold; color: #4E4949; }
+.nb { border: none !important; }
+.np { padding: 0px !important; }
+.ntp { padding-top:0px !important; }
+.nm { margin:0px !important; }
+.fl { float:left !important; }
+.fr { float: right; }
+.nbp { padding-bottom: 0px !important; }
+
+
+.email_input_box {
+	diplay:inline;
+	background: url(http://images2.solestruck.com/gae/newdesign/images/email_input_bg.jpg) repeat-x;
+	width: 378px;	height:29px;	#height:22px;	height:22px\9;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px 0px 0px 3px;	-webkit-border-radius: 3px 0px 0px 3px;	border-radius: 3px 0px 0px 3px;
+	padding: 0px 0px 0px 10px;	#padding: 7px 0px 0px 10px;	padding: 7px\9 0px\9 0px\9 10px\9;
+	margin: 10px 0px 0px 0px;
+	font-family:Arial;	font-size:12px;	color:#666666;
+	float:left;
+}
+.email_send_btn {
+	vertical-align:top;	
+	font-size: 10px;	font-weight: normal;	color: #fff;
+	background:url(http://images2.solestruck.com/gae/newdesign/images/search_go_btn.png) no-repeat;
+	width:30px;	height:31px;
+	margin: 10px 0px 0px 0px;	#margin: 10px 0px 0px 0px;
+	cursor: pointer;
+	border: none;
+	float:left;
+	border-radius:0px !important;
+}
+
+.
+/**** checkout button arrow ****/
+code.right_arrow {
+	background:url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) -10px -850px no-repeat;
+	width: 15px;	height:15px;
+	position:absolute;
+	margin: 0px 0px 0px 10px; /* Edit (Rathnavel) */
+	overflow:visible;
+	top:20px;
+}
+	
+	
+	
+/********* popups *****************/
+
+.ppup_cont_holder p{
+	color:#4e4949;	font-size:12px;	line-height:20px;
+	padding-top:2px;
+	}	
+.ppup_cont_holder p a{ font-weight:bold;	color:#4e4949;	text-decoration:none; }
+.ppup_cont_holder,
+.message_holder, 
+.whislist_holder, 
+.sendtofriend_popup_holder,
+.ppup_cont_holder {
+	width: 457px;
+	margin: 0px 27px 30px 27px;	padding: 24px 0px 0px 0px
+}
+
+.ppup_cont_holder .signup_social {
+	border-top:1px solid #eeeeee;
+	margin-top:20px;	padding:20px 0px 0px;
+}
+.ppup_cont_holder .signup_social a {
+	font-weight:bold; font-size:14px;	color:#ffffff;	text-decoration:none;
+	padding:12px 26px 12px 35px;
+	border-radius: 3px;	-moz-border-radius: 3px;	-webkit-border-radius: 3px;
+	float:left;
+}
+.ppup_cont_holder .form_link {
+	color:#4e4949;	font-size:12px;	font-weight:bold;
+	margin:29px 10px 0px 0px;
+	float:left;
+}
+.popup_pos h2 {
+	font-family: Arial;	font-size: 36px;	font-weight: bold;	color: #4e4949;
+	border-bottom: 1px solid #eeeeee;
+	padding: 0px 0px 15px 0px;
+}
+.popup_pos h4 {
+	font-weight:bold;
+	padding:15px 0px 0px 0px;
+}
+.login_form_holder,
+.message_form_holder,
+.whislist_form_holder {
+	margin: 15px 0px 30px 0px;
+}
+
+.login_inputfields {
+	display: block;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4e4949;
+}
+
+.login_password,
+.how_help_field,
+.keep_me_signin,
+.order_number {
+	display: block;
+	font-family: Arial;	font-size: 14px;	font-weight: bold;	color: #4e4949;	
+	margin: 16px 0px 0px 0px;
+}
+.login_password { float:left; margin:0px  0px 0px 0px !important; }
+.message_form_holder .message_textarea {  width: 440px; }
+#email_login { margin:10px 0px 15px !important;  }
+
+/********** Free Shipping Popup & return popup ****************/
+.free_shipping_content, .return_content { overflow-y: auto; max-height: 380px;}
+.free_shipping_popup h2, .return_popup h2 { margin-bottom:17px;}
+.free_shipping_popup h3, .return_content h3 { 
+	font-weight:bold; color: #4e4949;	font-size:14px;
+}
+.free_shipping_popup p, .return_content p { color: #4e4949; padding-bottom: 26px;}
+.free_shipping_popup ul { margin:10px 0px; }
+.free_shipping_popup ul li {
+	color:#4e4949;
+	line-height:20px;
+	font-size:12px;
+	padding:0px 0px 5px 0px;
+}
+.free_shipping_holder .jScrollPaneContainer { padding:15px 0px 9px 0px !important; }
+.free_shipping_holder .jScrollPaneDrag { margin:0px !important; }
+.free_shipping_popup h3 { padding:5px 0px;  }
+
+.popup_pos {
+	background: #fff;
+	display: none;
+	width: 511px;
+	padding: 0px;
+	position: absolute;
+	margin-left: -256px;
+	top:13%;	left: 50%;
+	z-index: 99999;
+}
+.lookbook_popup { width:650px !important; height:395px !important; padding:30px 30px 25px 30px !important; margin-left:-355px !important;  }
+.vedio_holder { width:650px; height:357px; }
+.lookbook_popup .login_popup_close { margin:-25px 0px 0px 655px; }
+.lookbook_popup span { margin:25px 0px 0px 0px; font-size:18px; color:#4c4c4c; font-weight:bold; display:block;  }
+/******************* cart_popup & upgrade_popup **********************/
+
+.remove_item { /*** cart popup remove icon ***/
+	background: url(http://images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -352px no-repeat;
+	float: left;
+	width: 20px;	#width: 15px;	height: 11px; 
+	margin: 15px 0px 0px 25px;
+	cursor: pointer;
+}
+#wish_list_popup_content .remove_item { margin:15px 0px 0px 10px !important; }
+.cart_submit_area {
+	margin: 12px 0px 0px 0px;
+	float: left;
+	width: 745px;
+}
+.cart_submit_area .gry_btn {  margin:0px; }
+.cart_submit_area p {
+	font-family: Arial;	font-size: 14px;
+	font-weight: bold;	color: #4d4d4d;
+	float: right;
+	padding:17px 35px 0px 0px;
+}
+.go_to_cart {
+	background: #d22e2e;
+	border-radius: 5px;	-moz-border-radius: 5px;	-webkit-border-radius: 5px;
+	width: 138px;	height: 22px;
+	display: block;
+	float: right;
+	margin: 0px 0px 0px 20px;	padding: 8px 0px 0px 10px;
+	text-transform: uppercase;	font-weight: bold;
+	font-family: Arial;	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.perchased_order_receipt a:hover.purchased_order_print_receipt { background: #7d7d7d; }
+
+.purchased_order_print_receipt {
+	background: #b1b1b1;
+	border-radius: 4px;	-moz-border-radius: 4px;	-webkit-border-radius: 4px;	
+	width: 118px;	height: 22px;
+	display: block;
+	float: left;
+	font-family: Arial;	font-weight: bold;	font-size: 14px;	color: #fff;	text-transform: uppercase;	text-decoration: none;
+	padding: 8px 0px 0px 10px;	margin: 0px 10px 0px 0px;
+}
+.perchased_order_receipt a:hover.purchased_order_download_receipt { background: #9e2323; }
+.purchased_order_download_receipt {
+	background: #d22e2e;
+	border-radius: 4px;	-moz-border-radius: 4px;	-webkit-border-radius: 4px;
+	width: 158px;	height: 22px;
+	display: block;
+	float: left;
+	font-family: Arial;	font-size: 14px;	color: #fff;	font-weight: bold;
+	text-transform: uppercase;	text-decoration: none;
+	padding: 8px 0px 0px 10px;
+}
+.control_tool .tabl .cont1 span {
+	border-bottom: 1px dotted #BFBABA;
+	color: #4E4949;
+	display: block;
+	padding: 3px 0 3px 10px;
+	width: 268px;
+}
+#backgroundPopup {
+	display: none;
+	position: absolute;
+	top: 0px;
+	height: 100% ;	width: 100% ;
+	background: url(http://images2.solestruck.com/gae/newdesign/images/popup_bg.png) repeat;
+	z-index: 70000;
+}
+
+.loading_page {
+	display:none;
+	position:fixed;
+	width:32px;
+	height:32px;
+	background:url(http://images2.solestruck.com/gae/newdesign/images/pageloading.gif) no-repeat;
+	left:50%;
+	margin-left:-16px;
+	top:50%;
+	margin-top:-16px;
+	z-index:99999;
+}

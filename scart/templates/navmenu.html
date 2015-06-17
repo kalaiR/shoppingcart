@@ -1,0 +1,66 @@
+{% load static from staticfiles %}
+<!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                             <li><a href="{% url home %}"><div>Home Page</div></a></li>
+                            <li><a href="{% url product_list %}"><div>Listing Page</div></a></li>                           
+                            <li><a href="{% url checkout %}"><div>CheckOut Page</div></a></li>
+                        </ul>
+
+                        <!-- Top Cart
+                        ============================================= -->
+                        <div id="top-cart">
+                            {% if basketline %}
+                                <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>{{ basketline|length }}</span></a>
+                            {% endif %}
+                            <div class="top-cart-content">
+                                <div class="top-cart-title">
+                                    <h4>Shopping Cart</h4>
+                                    
+                                </div>
+                                <div class="top-cart-items">
+                                    <form method="post" action="{% url removeItemFromBasket %}">
+                                    {% csrf_token %}
+                                    {% for basketval in basketline %}                                    
+                                        <div class="top-cart-item clearfix">
+                                            <div class="top-cart-item-image">
+                                                <a href="#"><img src="{{ STATIC_URL }}/images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt" /></a>
+                                            </div>
+                                            <div class="top-cart-item-desc">
+                                                <a href="#">{{basketval.product.product_title}}</a>
+                                                <span class="top-cart-item-price">{{basketval.quantity}} * {{basketval.product.product_price}} = {% widthratio basketval.quantity 1 basketval.product.product_price %}</span>
+                                                <span class="top-cart-item-quantity">{{basketval.quantity}} &nbsp; Qty</span>
+                                                <input name="selected_basketline" type="checkbox" value="{{ basketval.id }}" class="checking">
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                    <input type= "submit"  value="Delete" class="btn chk_delete_btn fr" disabled="disabled">
+                                </form>
+                                    
+
+                                </div>
+                                <div class="top-cart-action clearfix">                                
+                                 {% if basketline %}
+                                    <span class="fleft top-checkout-price">Total price {{total}} </span>
+                                    <a href="{% url checkout %}"> Check Out </a>
+                                 {% else %}
+                                    Cart Is Empty
+                                 {% endif %}
+                                
+                                </div>
+                            </div>
+                        </div><!-- #top-cart end -->
+
+                        <!-- Top Search
+                        ============================================= -->
+                        <div id="top-search">
+                            <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                            <form action="{% url searchlist %}" method="post">
+                                {% csrf_token %}
+                                <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                            </form>
+                        </div><!-- #top-search end -->
+
+                    </nav><!-- #primary-menu end -->

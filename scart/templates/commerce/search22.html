@@ -1,0 +1,97 @@
+{% extends 'base_inner.html' %}
+{% load i18n %}
+{% block content %}
+
+<!-- Page Title
+        ============================================= -->
+        <section id="page-title">
+
+            <div class="container clearfix">
+                <h1>Shop</h1>
+                <span>Start Buying your Favourite Theme</span>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="#">Shop</li>
+                    <li class="active">Search</li>
+                </ol>
+            </div>
+
+        </section><!-- #page-title end -->
+
+       <div class="container">
+           <div class="row border_1px">
+               <div class="col-md-6">
+                  <span>List view</span>
+                  <span>Grid view</span>
+               </div>
+               <div class="col-md-6">
+                  <ul class="list-inline">
+                      <li>ALL</li>>
+                      <li>QS</li>
+                      <li>Qsale</li>>
+                      <li>Time Sale</li>
+                  </ul>
+               </div>
+            </div>
+            <div  class="row">
+                <div class="col-md-6 text-center">
+                    <span>item</span>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="width">
+                    <span>price</span>
+                    </div>
+                    <div class="width">
+                        <span>shipping/orgin</span>
+                    </div>
+                    <div class="width">
+                        <span>Qpoint</span>
+                    </div>
+                    <div class="width">
+                        <span>Seller</span>
+                    </div>
+                    <div class="width">
+                        <span>Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row border_1">
+                <div class="col-md-6 ">
+                    <div class="col-md-3">
+                        <img src="{{ STATIC_URL }}/images/shop/dress/4.jpg" alt="Image">
+                    </div>
+                    <div class="col-md-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt nibh libero, et efficitur lacus malesuada vel. Aenean accumsan facilisis est nec tristique</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="width">
+                        <ul class="list-inline">
+                            <li><ins>S$36.00</ins></li>>
+                            <li>S$13.90 (S$0.50▼)</li>
+                            <li>S$13.40</li>>
+                        </ul>
+                    </div>
+                    <div class="width">
+                        <span>Storem pick up</span>
+                    </div>
+                    <div class="width">
+                        <span></span>
+                    </div>
+                    <div class="width">
+                        <span>BOBO</span>
+                    </div>
+                    <div class="width">
+                        <span>*****</span>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+
+                
+
+                
+
+
+  {% endblock %}
